@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Image Search</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<img id="header-image" src="img/heading.png"/>
+<div class="searchBox">
+<input type="text" name="query" id="query"/>
+<button type="submit" id="search-button" onclick="startSearch();">Search</button>
+</div>
+<div id="indexes">
+<input type="number" name="num-of-items-per-page" id="num-of-items-per-page" max="10" min="1" value ="10" required/>
+<span id="links">
+</span>
+<button type="button" class="next-button" onclick="changePageIndex(-1);"><</button>
+<button type="button" class="next-button" onclick="changePageIndex(1);">></button>
+</div>
+<div id="output">
+</div>
+<script type="text/javascript" src="js/index.js">
+</script>
+</body>
+</html>
