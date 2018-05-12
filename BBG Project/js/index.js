@@ -129,6 +129,7 @@ function sendSearchRequest(flag)
 			}
 		
 		if (xhr.status === 403) {
+			console.log(xhr.responseText);
 			alert("Daily Search Limit Reached. Please change the searchEngineId at line 102 of the index.js file with a new one who's daily usage limit hasn't been reached");
 		}
 	};
